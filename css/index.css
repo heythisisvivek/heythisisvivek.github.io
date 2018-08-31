@@ -1,0 +1,264 @@
+@import "reset.css";
+
+@font-face {
+	font-family: Custom-Contain;
+	src: url("../font/Custom Contain.otf");
+}
+
+@font-face {
+	font-family: Custom-Header;
+	src: url("../font/Custom Header.ttf");
+}
+
+body {
+	user-select: none;
+	font-family: Custom-Contain;
+	font-family: Custom-Header;
+	background-color: rgba(225, 225, 225, 0.2);
+}
+
+.nav-con {
+	width: 100%;
+	background: #f2f2f2;
+	font-family: Custom-Contain;
+	user-select: none;
+}
+
+.nav-con ul li {
+	padding: 10px;
+	cursor: default;
+	display: inline-block;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+.nav-con ul li:hover, .nav-nav:hover {
+	cursor: pointer;
+	background: rgb(220, 220, 220);
+	transition: background 0.4s;
+}
+
+a:active {
+	color: #FFF;
+}
+
+.nav-nav {
+	padding: 10px;
+	display: none;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.nav-nav {
+		display: block;
+	}
+	.nav-con ul li {
+		display: block;
+		text-align: center;
+	}
+	.nav-menu {
+		display: none;
+	}
+	.nav-res .nav-menu {
+		display: block;
+	}
+}
+
+header {
+	width: 95px;
+	height: 88px;
+	margin: 15px auto;
+	border-radius: 100%;
+	border: 5px solid #f2f2f2;
+	user-select: none;
+}
+
+header:hover {
+	transition: border 0.5s;
+	border-top: 5px solid red;
+	border-left: 5px solid yellow;
+	border-bottom: 5px solid green;
+	border-right: 5px solid skyblue;
+	animation: rotate-header 0.8s linear infinite;
+	transition: animation 2s ease-out;
+}
+
+@keyframes rotate-header {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(360deg)}
+}
+
+header img {
+	margin: 15px;
+	width: 75px;
+	height: 60px;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-drag: none;
+}
+
+.git-title-con {
+	text-align: center;
+}
+
+.git-title-h1 {
+	font-size: 25px;
+	line-height: 8px;
+	font-weight: bold;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.git-title {
+	padding: 5px;
+	padding-right: 10px;
+	background: rgb(249, 249, 249);
+}
+
+.git-sec-left {
+	margin: 20px;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 50px;
+	line-height: 30px;
+	padding-top: 15px;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	font-family: Custom-Contain;
+	transition: box-shadow 0.8s;
+}
+
+.git-sec-left-about {
+	line-height: 30px;
+	text-align: center;
+}
+
+.git-sec-right {
+	margin: 20px;
+	padding: 10px;
+	font-size: 18px;
+	margin-top: 50px;
+	line-height: 22px;
+	padding-top: 25px;
+	text-align: center;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	font-family: Custom-Contain;
+	transition: box-shadow 0.8s;
+}
+
+.git-sec-left:hover, .git-sec-right:hover {
+	transition: box-shadow 0.8s;
+	box-shadow: 0 0 25px rgb(180, 180, 180);
+}
+
+section, aside {
+	width: 47%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.git-sel-website {
+	margin: 18px;
+	width: 80%;
+	padding: 12px;
+	border-radius: 5px;
+	outline: 0;
+	border: 0;
+	font-size: 15px;
+	appearance: button;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	transition: box-shadow 0.3s;
+	box-shadow: 0px 5px 15px rgb(150, 150, 150);
+}
+
+.git-sel-website:hover {
+	transition: box-shadow 0.3s;
+	box-shadow: 0px 5px 25px rgb(150, 150, 150);
+}
+
+footer {
+	width: 100%;
+	bottom: 0px;
+	padding: 5px;
+	position: fixed;
+	text-align: center;
+	border-top: 1px solid #000;
+	font-family: Custom-Contain;
+	background-color: rgb(249, 249, 249);
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+option {
+	font-size: 16px;
+}
+
+.git-sec-desc-title {
+	top: 10px;
+	right: 640px;
+	font-size: 18px;
+	line-height: 0px;
+	padding: 2px;
+	position: relative;
+	font-family: Custom-Contain;
+	background-color: rgb(249, 249, 249);
+}
+
+.git-sec-desc {
+	width: 97%;
+	float: left;
+	padding: 20px;
+	font-size: 18px;
+	margin: 0 0 50px 20px;
+	border: 1px solid #000;
+	background-color: #FFF;
+	box-sizing: border-box;
+	font-family: Custom-Contain;
+	transition: box-shadow 0.3s;
+}
+
+.git-sec-desc:hover {
+	transition: box-shadow 0.3s;
+	box-shadow: 0px 5px 25px rgb(150, 150, 150);
+}
+
+@media screen and (max-width: 1125px) {
+	.git-sec-left, .git-sec-right {
+		width: 45%;
+	}
+	.git-sec-desc {
+		width: 95%;
+}
+	.git-sec-desc-title {
+		left: 50px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.git-sec-left, .git-sec-right {
+		width: 90%;
+	}
+	.git-sec-desc {
+		width: 90%;
+}
+}
+
+@media screen and (max-width: 600px) {
+	.git-sec-right {
+		margin-top: 0px;
+	}
+	.git-sec-left, .git-sec-right {
+		width: 90%;
+	}
+}
