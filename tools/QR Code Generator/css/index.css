@@ -1,0 +1,97 @@
+@import "reset.css";
+
+@font-face {
+  font-family: Georgia;
+  src: url('../font/Georgia.ttf');
+}
+
+body {
+  font-family: Georgia;
+  -webkit-user-select: none;
+}
+
+header h2 {
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(100, 100, 100);
+}
+
+footer div {
+  width: 100%;
+  bottom: 10px;
+  position: fixed;
+  padding-top: 2px;
+  border-radius: 5px;
+  text-align: center;
+  color: rgb(100, 100, 100);
+  border-top: 1px solid rgb(100, 100, 100);
+}
+
+footer div span {
+  font-size: smaller;
+  vertical-align: super;
+}
+
+div.qr_container {
+  text-align: center;
+}
+
+div.qr_container div {
+  margin: 10px;
+}
+
+.user_inp_field {
+  width: 250px;
+  padding: 8px;
+  font-size: 15px;
+  transition: border 0.2s;
+  border: 1px solid lightskyblue;
+}
+
+div.qr_container input[type="button"] {
+  border: 0;
+  outline: 0;
+  color: #FFF;
+  width: 110px;
+  padding: 7px;
+  display: block;
+  margin: 10px auto;
+  transition: background 0.2s;
+  background-color: lightskyblue;
+}
+
+.user_inp_field:focus,.qr_option_size_1:focus, .qr_option_size_2:focus {
+  border: 1px solid #1E90FF;
+}
+
+div.qr_container input[type="button"]:focus {
+  background-color: #1E90FF;
+}
+
+div.qr_option .option_title {
+  color: #6495ED;
+  margin-left: 200px;
+  cursor: pointer;
+}
+
+div.qr_option {
+  color: rgb(100, 100, 100);
+}
+
+.qr_option_size_1, .qr_option_size_2 {
+  width: 30px;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid lightskyblue;
+  transition: border 0.2s;
+}
+
+.option_title {
+  cursor: pointer;
+}
+
+.hiding_option {
+  display: none;
+}
