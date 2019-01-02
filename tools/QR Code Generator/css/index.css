@@ -8,6 +8,17 @@
 body {
   font-family: Georgia;
   -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+header {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+header h2::selection {
+  color: #FFF;
+  background-color: skyblue;
 }
 
 header h2 {

@@ -21,23 +21,23 @@
 <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 <body>
-<nav class="nav-con">
-<div class="nav-nav">&#9776;</div>
-<ul class="nav-menu" id="nav-menu">
-<li onclick="alert('You Already on Home Page.')"><a href="#">Home</a></li>
-<a href="https://plus.google.com/u/0/103686843910715347387" target="_blank"><li>Gmail</li></a>
-<a href="https://twitter.com/heythisisvivek" target="_blank"><li>Twitter</li></a>
-<a href="https://www.facebook.com/heythisisvivek" target="_blank"><li>Facebook</li></a>
-<a href="https://github.com/heythisisvivek" target="_blank"><li>Github</li></a>
-<!-- <a href="#"><li>Tools
-  <ul class="tools_nav">
-    <li>asd</li>
-  </ul>
-  </li>
-</a> -->
-<li onclick="window.open('https://www.google.com','_self')">Close</li>
-</ul>
-</nav>
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active" onclick="alert('You Already on Home Page.')">Home</a>
+  <a href="https://plus.google.com/u/0/103686843910715347387" target="_blank">Gmail</a>
+  <a href="https://twitter.com/heythisisvivek" target="_blank">Twitter</a>
+  <a href="https://www.facebook.com/heythisisvivek" target="_blank">Facebook</a>
+  <a href="https://github.com/heythisisvivek" target="_blank">Github</a>
+  <div class="dropdown">
+    <div class="dropbtn">Tools
+      <i>&#8609;</i>
+    </div>
+    <div class="dropdown-content">
+      <a href="tools\QR Code Generator\index.html">QR Scanner</a>
+    </div>
+  </div>
+  <a href="#" onclick="window.open('https://google.com','_self')" class="close_btn">Close</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 <header  title="It's Me Bro">
 <img src="images/index/profile.png">
 </header>
@@ -66,7 +66,6 @@
 <select class="git-sel-website" onchange="window.open(this.value,'_blank')">
   <option style="display: none" value="#">Click Below Option To Redirect On Page.</option>
   <option style="color: blue" value="https://github.com/heythisisvivek/Stark-Hotspot">Stark-Hotspot</option>
-  <option style="color: blue" value="https://github.com/heythisisvivek/classical-loader">classical-loader</option>
 </select>
 </aside>
 <span class="git-sec-desc-title">Note :</span>
