@@ -1,5 +1,5 @@
 # About
-https://thisisjake.ninja is version 2.0 with few updates and customization.
+https://thisisvivek.ninja is version 2.0 with few updates and customization.
 
 ## Technology
 
