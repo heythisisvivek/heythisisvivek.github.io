@@ -26,7 +26,7 @@ Links
 
 * Homepage: https://thisisvivek.ninja
 * Twitter: [@heythisisvivek](https://twitter.com/heythisisvivek)
-* Telegram: [@heythisisvivek](t.me/heythisisvivek)
+* Telegram: [@heythisisvivek](https://t.me/heythisisvivek)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
