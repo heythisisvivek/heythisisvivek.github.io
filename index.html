@@ -22,6 +22,8 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/index.css" />
+  <!-- Project Json File -->
+  <script src="Project.json"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -47,10 +49,10 @@
           <a class="nav-link" href="https://forms.gle/VG5yRbrB4bS3Fbaj9">Contact  </a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" id="searchTXT" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchString(document.querySelector('#searchTXT').value)">Search</button>
+      </div>
     </div>
   </nav>
   <!-- Page Header -->
@@ -78,7 +80,7 @@
     <div class="column" style="padding-right: 50px;">
       <h2 class="shake-slow shake-constant">Certification</h2>
       <p>
-        <ul >
+        <ul>
           <li><span class="spinner-grow text-danger"></span> Maharashtra State Board (10th/12th)</li>
           <li><span class="spinner-grow text-success"></span> Diploma in Computer Application & Graphics</li>
           <li><span class="spinner-grow text-primary"></span> Diploma in Computer Hardware & Assembling</li>
@@ -89,7 +91,7 @@
     </div>
   </div>
   <div class="jumbotron skill-rows mb-0 p-5" style="background-color: #d5d9dd;">
-    <h2 style="text-align: center; font-weight: bold;">Skills</h2>
+    <h2 class="shake-slow shake-constant" style="text-align: center; font-weight: bold;">Skills</h2>
     <div class="wrapper">
     <div class="skillbar" data-percent="80%">
       <div class="skillbar-title">Application development</div>
@@ -123,8 +125,8 @@
     </div>
   </div>
   </div>
-  <div class="jumbotron mb-0 p-5" style="background-color: #d5d9dd;">
-    <h2 style="text-align: center; font-weight: bold;">Project 2018</h2>
+  <div class="jumbotron mb-0 p-0" style="background-color: #d5d9dd;">
+    <h2 class="shake-slow shake-constant" style="text-align: center; font-weight: bold;">Project 2018</h2>
     <br />
     <div class="row">
     <div class="col-md-3">
@@ -161,6 +163,27 @@
     </div>
   </div>
   </div>
+  <div class="jumbotron mb-0 px-5" style="background-color: #d5d9dd;">
+    <h2 class="shake-slow shake-constant" style="text-align: center; font-weight: bold;">Work</h2>
+    <br /> 
+    <table class="table" style="background-color: #fff;">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Name</th>
+          <th scope="col">Technology</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          list = items.length;
+          for(x = 0; x <= list; x++) {
+              document.write("<tr><th scope = 'row'>"+ items[x].ID + "</th><td>" + items[x].Name + "</td><td>" + items[x].Technology + "</td></tr>");
+          }
+        </script>
+      </tbody>
+    </table>
+  </div>
   <!-- Footer -->
 <section id="lab_social_icon_footer">
   <div class="container">
@@ -177,5 +200,7 @@
     Copyleft <span class="copyleft">&copy;</span> 2018 - <script>document.write(new Date().getFullYear())</script> by Vivek
   </div>
 </footer>
+  <!-- External Javascript -->
+  <script src="js/index.js"></script>
 </body>
 </html>
