@@ -1,5 +1,5 @@
 # About
-https://thisisvivek.me is version 2.0 with few updates and customization.
+https://thisisvivek.ninja is version 2.0 with few updates and customization.
 
 ## Technology
 
@@ -24,7 +24,7 @@ git clone https://github.com/heythisisvivek/heythisisvivek.github.io
 Links
 ----
 
-* Homepage: https://thisisvivek.me
+* Homepage: https://thisisvivek.ninja
 * Twitter: [@heythisisvivek](https://twitter.com/heythisisvivek)
 * Telegram: [@heythisisvivek](https://t.me/heythisisvivek)
 
