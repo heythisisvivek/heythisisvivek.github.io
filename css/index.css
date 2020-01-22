@@ -229,7 +229,7 @@ ul li {
     text-transform: uppercase;
   }
   
-  .swiper-container {
+  /* .swiper-container {
     width: 60%;
     height: 60%;
   }
@@ -239,7 +239,6 @@ ul li {
     font-size: 18px;
     background: #d5d9dd;
 
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -256,8 +255,8 @@ ul li {
 
   @media screen and (max-width: 800px) {
     .swiper-container {
-      width: 95%;
-      height: 95%;
+      width: 100%;
+      height: 100%;
     }
   }
-  
+   */
