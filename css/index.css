@@ -167,7 +167,7 @@ footer {
       width: 100%;
     }
     .row-one .column {
-        height: 400px;
+        height: 500px;
     } 
     .swiper-container {
       width: 100%;
@@ -229,7 +229,7 @@ ul li {
     text-transform: uppercase;
   }
   
-  /* .swiper-container {
+  .swiper-container {
     width: 60%;
     height: 60%;
   }
@@ -259,4 +259,4 @@ ul li {
       height: 100%;
     }
   }
-   */
+  
