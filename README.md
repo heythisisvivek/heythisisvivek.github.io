@@ -1,13 +1,12 @@
 # About
-https://thisisvivek.ninja is version 2.0 with few updates and customization.
+https://thisisvivek.ninja is version 3.0 fully customized.
 
 ## Technology
 
 * HTML
 * CSS
+* SCSS
 * Javascript
-* Bootstrap
-* Jquery
 * Exteral Library
 
 Screenshots
