@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="Jake Redfield">
+    <meta name="description" content="Responsive Template to increase developmenet time.">
+    <meta name="keywords" content="responsive, template, css">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="template.json"></script>
+</head>
+<body>
+    <div class="sm__screen">
+            <div class="sm__body">
+                <h2>Currently we only support Desktop Screen</h2>
+                <img src="img/desktop.png" alt="Desktop" />
+            </div>
+    </div>
+    <div class="md__screen">
+            <nav>
+                <span class="md__nav bar" onclick="openSideBar()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>
+                <a href="" class="md__nav">My Project - 2018</a>
+                <span" class="md__nav demo" ></span>
+                <span" class="md__nav rotate" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></span>
+            </nav>
+
+            <div class="md__body">
+                <div class="md__sidebar">
+                        <div class="sidebar__item">
+                            <script>
+                                var templatesItem = 0;
+                                for(templatesItem = 0; templatesItem < templates.length; templatesItem++) {
+                                    document.write(`<div class="codeBtn"><button id="${templates[templatesItem]["project_link"]}" onclick="viewbtn(this.id)" class="viewbtn" type="button">VIEW PROJECT</button></div><img id="${templates[templatesItem]["project_link"]}" onclick="changeFrame(this.id)" src="${templates[templatesItem]["img"]}" alt="${templates[templatesItem]["project_name"]}">`);
+                                }
+                            </script>
+                            <div style="height: 10px"></div>
+                        </div>
+                </div>
+                <div class="md__content">
+                    <iframe id="iframe" class="iframe--md" src="template/" frameborder="0"></iframe>
+                </div>
+            </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>

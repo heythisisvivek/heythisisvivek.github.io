@@ -1,0 +1,8 @@
+let templates = [
+    {"ID" : "1", "img" : "template/electron-calculator.png", "project_name" : "Basic Calculator", "project_link" : "https://heythisisjake.blogspot.com/2018/08/basic-calculator.html"},
+    {"ID" : "2", "img" : "template/electron-video-player.png", "project_name" : "Video Player", "project_link" : "https://heythisisjake.blogspot.com/2018/08/basic-video-player.html"},
+    {"ID" : "3", "img" : "template/canteen.jpg", "project_name" : "Stark Hotspot", "project_link" : "https://github.com/heythisisvivek/Canteen"},
+    {"ID" : "4", "img" : "template/stark-hotspot.png", "project_name" : "Stark Hotspot", "project_link" : "https://github.com/heythisisvivek/Stark-Hotspot"},
+    {"ID" : "5", "img" : "template/ArtGallery.png", "project_name" : "Art Gallery", "project_link" : "https://github.com/heythisisvivek/Modern-Art-Gallery"},
+    {"ID" : "6", "img" : "template/texteditor.png", "project_name" : "Text Editor", "project_link" : "https://github.com/heythisisvivek/TextEditor"},
+]

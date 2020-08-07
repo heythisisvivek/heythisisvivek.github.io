@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hover Mouse Here, Yes I Am The Vivek, The Computer Prodigy.</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Jquery UI -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Project Json File -->
+  <script src="Project.json"></script>
+</head>
+<body>
+  <div class="beforeloading">
+    <div style="margin-top: 10%; text-align: center;">
+      <h2 style="font-size: 100px; font-weight: bold;">VIVEK</h2>
+      <img src="img/loading.gif" width="50px" height="50px" alt="">
+    </div>
+  </div>
+  <div class="afterloading">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="img/nav-icon.svg" width="35" height="35" class="d-inline-block align-top" alt="">
+      Vivek
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Site Version 2.0
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="Update/V1.0/index.html">Version 1.0</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://forms.gle/VG5yRbrB4bS3Fbaj9">Contact  </a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" id="searchTXT" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="searchString(document.querySelector('#searchTXT').value)">Search</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="jumbotron">
+    <div class="header-img">
+      <img src="img/profile.png" alt="Profile" height="250px">
+    </div>
+      <div class="header-content">
+        <div class="typewriter">
+          <h1>Vivek |</h1>
+        </div>
+        <p>Think Above, Stay Ahead.</p>
+      </div>
+  </header>
+  <div class="horizontal-line"></div>
+  <!-- Main Content   -->
+  <div class="blank-space"></div>
+  <div class="row-one">
+    <div class="column">
+      <h2>About</h2>
+      <p>
+        Innovative tech mind with 10 years of experience working as a computer programmer, web developer and security researcher. Capable of working with a variety of technology and software solutions, and managing databases. Valuable team member who has experience diagnosing problems and developing solutions. Extensive expertise in networking systems and working with mainframe computers. Talented leader with unique ideas and a history of successful contributions in the field.
+      </p>
+    </div>
+    <div class="column" style="padding-right: 50px;">
+      <h2>Certification</h2>
+      <p>
+        <ul>
+          <li><span class="spinner-grow text-danger"></span> Maharashtra State Board (10th/12th)</li>
+          <li><span class="spinner-grow text-success"></span> Diploma in Computer Application & Graphics</li>
+          <li><span class="spinner-grow text-primary"></span> Diploma in Computer Hardware & Assembling</li>
+          <li><span class="spinner-grow text-info"></span> Maharashtra State Certification in Information Technology</li>
+          <li><span class="spinner-grow text-info"></span> Certified Information Security and Ethical Hacking (CISEH) Dropout from Pristine Infosolutions</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <div class="jumbotron skill-rows mb-0 p-5" style="background-color: #d5d9dd;">
+    <h2 style="text-align: center; font-weight: bold;">Skills</h2>
+    <div class="wrapper">
+    <div class="skillbar" data-percent="80%">
+      <div class="skillbar-title">Application development</div>
+      <div class="skill-bar-percent">80%</div>
+      <div class="skillbar-bar" style="width: 80%;"></div>
+    </div>
+    <div class="skillbar" data-percent="60%">
+      <div class="skillbar-title">Android development</div>
+      <div class="skill-bar-percent">60%</div>
+      <div class="skillbar-bar" style="width: 60%;"></div>
+    </div>
+    <div class="skillbar" data-percent="90%">
+      <div class="skillbar-title">Full stack developer</div>
+      <div class="skill-bar-percent">90%</div>
+      <div class="skillbar-bar" style="width: 90%;"></div>
+    </div>
+    <div class="skillbar" data-percent="85%">
+      <div class="skillbar-title">Python developer</div>
+      <div class="skill-bar-percent">85%</div>
+      <div class="skillbar-bar" style="width: 85%;"></div>
+    </div>
+    <div class="skillbar" data-percent="80%">
+      <div class="skillbar-title">Javascript developer</div>
+      <div class="skill-bar-percent">80%</div>
+      <div class="skillbar-bar" style="width: 80%;"></div>
+    </div>
+    <div class="skillbar" data-percent="70%">
+      <div class="skillbar-title">Photoshop</div>
+      <div class="skill-bar-percent">70%</div>
+      <div class="skillbar-bar" style="width: 70%;"></div>
+    </div>
+  </div>
+  </div>
+  <div class="jumbotron mb-0 p-0" style="background-color: #d5d9dd;">
+    <h2 style="text-align: center; font-weight: bold;">Project 2018</h2>
+    <br />
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/Project/pro1.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Project/pro2.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Project/pro3.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/Project/pro4.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </div>
+  <div class="jumbotron mb-0 px-5" style="background-color: #d5d9dd;">
+    <h2 style="text-align: center; font-weight: bold;">Work</h2>
+    <br /> 
+    <table class="table" style="background-color: #fff;">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Name</th>
+          <th scope="col">Technology</th>
+        </tr>
+      </thead>
+      <tbody>
+        <script>
+          list = items.length;
+          for(x = 0; x <= list; x++) {
+              document.write("<tr><th scope = 'row'>"+ items[x].ID + "</th><td>" + items[x].Name + "</td><td>" + items[x].Technology + "</td></tr>");
+          }
+        </script>
+      </tbody>
+    </table>
+  </div>
+  <!-- Footer -->
+<section id="lab_social_icon_footer">
+  <div class="container">
+          <div class="text-center center-block">
+                <a href="https://www.facebook.com/heythisisvivek"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                <a href="https://twitter.com/heythisisvivek"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                <a href="https://github.com/heythisisvivek"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+                <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-copyright">
+    Copyleft <span class="copyleft">&copy;</span> 2018 - <script>document.write(new Date().getFullYear())</script> by Vivek
+  </div>
+</footer>
+</div>
+  <!-- External Javascript -->
+  <script src="js/index.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5e22c2c8daaca76c6fcea328/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>

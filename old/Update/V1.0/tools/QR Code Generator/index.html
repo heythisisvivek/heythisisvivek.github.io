@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="html/text; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <title>QR Code Generator - Jake Redfield</title>
+</head>
+<body>
+  <header>
+    <h2>QR Code Generator<h2>
+  </header>
+  <div class="qr_container">
+    <img class="qr_link" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Welcome 2 My Site&size=200x200" alt="QR Is Loading..." />
+      <div>
+        <div class="qr_option">
+          <div title="Click Me" class="option_title">Options &#x21B4;</div>
+          <div class="hiding_option">
+          Size:-
+          <input class="qr_option_size_1" type="text" value="200" maxlength="3" />
+          x
+          <input class="qr_option_size_2" type="text" value="200" maxlength="3" />
+          <br />
+          <br />
+          Text Color:- <input type="color" class="qr_option_color" />
+          <br />
+          <br />
+          background Color:- <input type="color" class="qr_option_bgcolor" />
+        </div>
+        </div>
+        <input class="user_inp_field" type="text" placeholder="Text To Generate" />
+        <input type="button" onclick="user_req()" value="Generate" />
+      </div>
+  </div>
+  <footer>
+    <div>
+      Copyright<span>&copy;</span> 2018 - Jake Redfield
+    </div>
+  </footer>
+  <script>
+    var option_title = document.querySelector(".option_title");
+    option_title.addEventListener("click",() => {
+      var hiding_option = document.querySelector(".hiding_option");
+      if(hiding_option.style.display=="none") {
+        hiding_option.style.display="block";
+      } else {
+        hiding_option.style.display="none"
+      }
+    })
+    function user_req() {
+      var qr_option_size_1 = document.querySelector(".qr_option_size_1");
+      var qr_option_size_2 = document.querySelector(".qr_option_size_2");
+      if(isNaN(qr_option_size_1.value) == true || isNaN(qr_option_size_2.value) == true) {
+        qr_option_size_1.style.border = "1px solid red";
+        qr_option_size_2.style.border = "1px solid red";
+        alert("Invalid Size");
+      } else {
+      var qr_option_color = document.querySelector(".qr_option_color").value;
+      var qr_link = document.querySelector(".qr_link");
+      var txt_field = document.querySelector(".user_inp_field").value;
+      var qr_option_bgcolor = document.querySelector(".qr_option_bgcolor").value;
+      var qr_optioncolor_sliced = qr_option_color.slice(1);
+      var qr_optionbgcolor_sliced = qr_option_bgcolor.slice(1);
+      var qr_server_link = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+ txt_field +"&size="+ qr_option_size_1.value + "x" + qr_option_size_2.value +"&color=" + qr_optioncolor_sliced + "&bgcolor=" + qr_optionbgcolor_sliced + "";
+      qr_link.setAttribute("src",qr_server_link);
+    }}
+  </script>
+</body>
+</html>
