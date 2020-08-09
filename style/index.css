@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Poppins&family=Roboto&family=Ubuntu&family=Maven+Pro&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +17,10 @@
 
 a {
   text-decoration: none; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
 
 .displayNavFlex {
   display: flex !important;
