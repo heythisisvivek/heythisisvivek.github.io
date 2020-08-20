@@ -39,6 +39,23 @@
     .topBar .topBar__right ul li:first-child {
       margin-right: 1rem; }
 
+.goToTop {
+  right: 2rem;
+  z-index: 100;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+  bottom: 2rem;
+  color: #FFF;
+  position: fixed;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 2rem;
+  background: var(--primary-color); }
+  .goToTop:hover {
+    background: var(--primary-color-hover); }
+
 .scroll-nav {
   box-shadow: 0 4px 5px -2px grey; }
 
