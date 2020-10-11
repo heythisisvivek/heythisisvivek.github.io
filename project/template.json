@@ -6,4 +6,6 @@ let templates = [
     {"ID" : "5", "img" : "template/ArtGallery.png", "project_name" : "Art Gallery", "project_link" : "https://github.com/heythisisvivek/Modern-Art-Gallery"},
     {"ID" : "6", "img" : "template/texteditor.png", "project_name" : "Text Editor", "project_link" : "https://github.com/heythisisvivek/TextEditor"},
     {"ID" : "7", "img" : "template/Furniture/furniture.png", "project_name" : "Furniture", "project_link" : "template/Furniture/index.html"},
+    {"ID" : "8", "img" : "template/restedfurniture.png", "project_name" : "Rested Furniture", "project_link" : "http://restedfurniture.com/"},
+    {"ID" : "9", "img" : "template/myog.png", "project_name" : "Rested Furniture", "project_link" : "https://myog.in/"},
 ]
