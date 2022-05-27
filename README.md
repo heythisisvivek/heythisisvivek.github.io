@@ -1,5 +1,5 @@
 # About
-https://heythisisvivek.github.io/ is version 3.0 fully customized.
+https://heythisisvivek.github.io/ is version 3.1 fully customized.
 
 ## Technology
 
