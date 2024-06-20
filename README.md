@@ -12,7 +12,7 @@ https://heythisisvivek.github.io/ is version 3.1 fully customized.
 Screenshots
 ----
 
-![Screenshot](img/wallpaper.png)
+![Screenshot](img/Wallpaper.png)
 
 ## Usage
 Preferably, you can download this site by cloning the Git repository:
